@@ -7,39 +7,37 @@
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./images/favicon-32x32.png"
+      href="./design/images/favicon-32x32.png"
     />
     <link rel="stylesheet" href="style.css" />
     <title>Frontend Mentor | Profile card component</title>
   </head>
   <body>
-    <img
-      class="left-top"
-      src="/design/images/bg-pattern-top.svg"
-      alt="Top background pattern"
-    />
-    <img
-      class="right-bottom"
-      src="/design/images/bg-pattern-bottom.svg"
-      alt="Bottom background pattern"
-    />
-    <main class="content">
+    <main class="content" aria-labelledby="profile-name">
       <header class="header">
-        <img src="design/images/image-victor.jpg" alt="Victor Crest" />
+        <img
+          src="./design/images/image-victor.jpg"
+          alt="Victor Crest"
+          width="106"
+          height="106"
+        />
       </header>
       <div class="middle-content">
-        <p><span>Victor Crest</span> 26</p>
+        <div class="profile-identity">
+          <h1 id="profile-name">Victor Crest</h1>
+          <span class="age">26</span>
+        </div>
         <p>London</p>
       </div>
-      <div class="bottom-content">
-        <div class="item"><span>80K</span> Followers</div>
-        <div class="item"><span>803K</span> Likes</div>
-        <div class="item"><span>1.4K</span> Photos</div>
-      </div>
+      <ul class="bottom-content" role="list" aria-label="Profile statistics">
+        <li class="item"><span>80K</span> Followers</li>
+        <li class="item"><span>803K</span> Likes</li>
+        <li class="item"><span>1.4K</span> Photos</li>
+      </ul>
     </main>
     <footer class="attribution">
       Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+      <a href="https://www.frontendmentor.io?ref=challenge"
         >Frontend Mentor</a
       >. Coded by <a href="https://github.com/pettik">Petr Bednarski</a>.
     </footer>
